@@ -1,0 +1,20 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"></head><body><div id="work-section" class="section">
+<a href="#/home"><span class="rotate90">&laquo</span> Back</a>
+<div class="works-container">
+    <div class="single-work ng-isolate-scope" work="work" ng-repeat="work in works">
+	  <div class="img-container pull-left">
+        <img ng-src="{{work.img}}" alt="work.name">
+    </div>
+    <div class="content-container">
+        <h2>{{work.name}}</h2>
+        <p class="exerp">
+            {{work.exerp}}
+        </p>
+        <a href="http://www.taverdon.com/directives/templates/%7B%7Bwork.link%7D%7D" class="link btn" ng-show="work.link" target="_BLANK">Go to page »</a>
+        <div class="clearfix"></div>
+    </div>
+	</div>
+</div>
+</div>
+</body></html>

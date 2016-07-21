@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+
+<head>
+    <title>PurpleMAD  : Website Development Company Toronto, Wordpress, HTML5, css3, jQuery, Responsive Website Design</title>
+	<meta name="keywords" content="Html5 developer toronto,Jquery developer toronto,Jquery mobile developer toronto,wordpress developer toronto,css3 developer toronto,bootstrap developer toronto,Responsive website design toronto">
+	<meta name="description" content="A Toronto base Wordpress,HTML5,CSS3 and jQuery mobile Developer experts Company,also has expertise in area of Framework like bootstrap,LESS and  Responsive Web Design.">
+	<meta name="author" content="PurpleMAD" />
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<meta charset="utf-8">
+	<meta name="author" content="PurpleMAD">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div ng-view class="animate {{animationClass}}"></div>
+
+  <script src="angular/angular.min.js"></script>
+  <script src="angular/angular-route.min.js"></script>
+  <script src="angular/angular-sanitize.min.js"></script>
+  <script src="angular/angular-animate.js"></script>
+  <script src="app.js"></script>
+  <script src="directives/directives.js?v=<?=rand()?>"></script>
+  <script src="modules/home/home.js?v=<?=rand()?>"></script>
+  <script src="modules/contact/contact.js?v=<?=rand()?>"></script>
+  <script src="modules/work/work.js?v=<?=rand()?>"></script>
+  <script src="modules/photo/photo.js?v=<?=rand()?>"></script>
+  <script src="modules/music/music.js?v=<?=rand()?>"></script>
+</body>
+</html>

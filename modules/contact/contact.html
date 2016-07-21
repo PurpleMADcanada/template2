@@ -1,0 +1,21 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"></head><body><div id="contact-section" class="section">
+<a href="#/home">&laquo Back</a>
+<div class="animate fade" ng-show="!endForm">
+    <p>Feel free to leave me a note, I'll answer soon :)</p>
+    <form id="contact-form" name="form" ng-submit="submitContactForm();">
+        <div class="contact-input">
+            <input name="email" placeholder="Your email" ng-model="email" required="" type="email">
+            <div class="error-message" ng-show="emailError">I'll need your email</div>
+        </div>
+        <div class="contact-input">
+            <textarea id="form-message" name="message" placeholder="What can I do you for?" ng-model="message" required=""></textarea>
+            <div class="error-message" ng-show="messageError">Tell me something</div>
+        </div>
+        <div id="form-submit" class="btn" ng-click="submitContactForm();" ng-show="!form.message.$error.required &amp;&amp; !form.email.$error.required &amp;&amp; !form.email.$error.email">SEND</div>
+    </form>
+</div>
+<div class="contact-result animate fade" ng-show="endForm" ng-bind-html="endForm">
+</div>
+</div>
+</body></html>
